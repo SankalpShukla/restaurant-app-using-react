@@ -7,7 +7,7 @@ class DishDetail extends Component {
         const dish=this.props.selectedDish
         if (dish != null)
             return(
-                <Card>
+                <Card key={dish.id}> 
                     <CardImg top src={dish.image} width="500px" hright="300px" alt={dish.name} />
                     <CardBody>
                       <CardTitle>{dish.name}</CardTitle>
@@ -28,7 +28,7 @@ class DishDetail extends Component {
             <div>
                 <ul class="list-unstyled">
                     <li>{comm.comment}</li> 
-                    <li>--{comm.author},{comm.date}</li>
+                    <li>--{comm.author} , {new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit'}).format(new Date(Date.parse(comm.date)))}</li>
                 </ul>
             </div>
         )
@@ -44,14 +44,16 @@ class DishDetail extends Component {
     }
     render(){
         return(
-            <div class="row">
+        <div class="container">
+           <div class="row">
                 <div class="col-12 col-md-5">
                     {this.renderDish()}
-                </div>
+                </ div>
                 <div class="col-12 col-md-5">
                     {this.renderComment()}
                 </div>
             </div>
+        </div>
         
         )}  
      
