@@ -19,7 +19,7 @@ class Header extends Component{
             <Navbar dark expand="md">
                 <div className="container">
                     <NavbarToggler onClick={this.toggleNav} />
-                    <NavbarBrand className="mr-auto" href=""><img src="https://pbs.twimg.com/profile_banners/865221883/1425404576/1500x500" alt="Foodies Restaurant" height="30" width="41" /></NavbarBrand>
+                    <NavbarBrand className="mr-auto" href=""><img src="../assets/images.logo.png" alt="Foodies Restaurant" height="30" width="41" /></NavbarBrand>
             <Collapse isOpen={this.state.isNavOpen} navbar>
             <Nav navbar>
                 <NavItem>

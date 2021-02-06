@@ -1,8 +1,34 @@
 import React from "react"
-function Home(){
+import { Card, CardImg, CardText, CardBody,
+    CardTitle, CardSubtitle} from 'reactstrap';
+    function RenderCard({item}) {
+
+        return(
+            <Card>
+                <CardImg src={item.image} alt={item.name} />
+                <CardBody>
+                <CardTitle>{item.name}</CardTitle>
+                {item.designation ? <CardSubtitle>{item.designation}</CardSubtitle> : null }
+                <CardText>{item.description}</CardText>
+                </CardBody>
+            </Card>
+        );
+    
+    }
+function Home(props){
     return(
         <div className="container">
-            <h4>Home</h4>
+            <div className="row align-items-start">
+                <div class="col col-md m-1">
+                    <RenderCard item={props.dish} />
+                </div>
+                <div class="col col-md m-1">
+                    <RenderCard item={props.promo} />
+                </div>
+                <div class="col col-md m-1">
+                    <RenderCard item={props.lead} />
+                </div>
+            </div>
         </div>
     )
 }

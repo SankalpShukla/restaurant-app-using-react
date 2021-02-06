@@ -3,184 +3,41 @@ export const DISHES =
         {
         id: 0,
         name:'Uthappizza',
-        image: 'https://static.toiimg.com/photo/53110049.cms',
+        image: 'https://static.toiimg.com/photo/76481989.cms',
         category: 'mains',
         label:'Hot',
         price:'4.99',
-        description:'A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.',
-        comments: [
-            {
-            id: 0,
-            rating: 5,
-            comment: "Imagine all the eatables, living in conFusion!",
-            author: "John Lemon",
-            date: "2012-10-16T17:57:28.556094Z"
-            },
-            {
-            id: 1,
-            rating: 4,
-            comment: "Sends anyone to heaven, I wish I could get my mother-in-law to eat it!",
-            author: "Paul McVites",
-            date: "2014-09-05T17:57:28.556094Z"
-            },
-            {
-            id: 2,
-            rating: 3,
-            comment: "Eat it, just eat it!",
-            author: "Michael Jaikishan",
-            date: "2015-02-13T17:57:28.556094Z"
-            },
-            {
-            id: 3,
-            rating: 4,
-            comment: "Ultimate, Reaching for the stars!",
-            author: "Ringo Starry",
-            date: "2013-12-02T17:57:28.556094Z"
-            },
-            {
-            id: 4,
-            rating: 2,
-            comment: "It's your birthday, we're gonna party!",
-            author: "25 Cent",
-            date: "2011-12-02T17:57:28.556094Z"
-            }
-        ]                        },
+        featured: true,
+        description:'A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.'                    
+        },
         {
         id: 1,
         name:'Zucchipakoda',
-        image: 'https://www.indianveggiedelight.com/wp-content/uploads/2017/03/spinach_corn_pakoda.jpg',
+        image: 'https://www.whiskaffair.com/wp-content/uploads/2020/07/Onion-Pakoda-3.jpg',
         category: 'appetizer',
         label:'',
         price:'1.99',
-        description:'Deep fried Zucchini coated with mildly spiced Chickpea flour batter accompanied with a sweet-tangy tamarind sauce',
-        comments: [
-            {
-            id: 0,
-            rating: 5,
-            comment: "Imagine all the eatables, living in conFusion!",
-            author: "John Lemon",
-            date: "2012-10-16T17:57:28.556094Z"
-            },
-            {
-            id: 1,
-            rating: 4,
-            comment: "Sends anyone to heaven, I wish I could get my mother-in-law to eat it!",
-            author: "Paul McVites",
-            date: "2014-09-05T17:57:28.556094Z"
-            },
-            {
-            id: 2,
-            rating: 3,
-            comment: "Eat it, just eat it!",
-            author: "Michael Jaikishan",
-            date: "2015-02-13T17:57:28.556094Z"
-            },
-            {
-            id: 3,
-            rating: 4,
-            comment: "Ultimate, Reaching for the stars!",
-            author: "Ringo Starry",
-            date: "2013-12-02T17:57:28.556094Z"
-            },
-            {
-            id: 4,
-            rating: 2,
-            comment: "It's your birthday, we're gonna party!",
-            author: "25 Cent",
-            date: "2011-12-02T17:57:28.556094Z"
-            }
-        ]
+        featured: false,
+        description:'Deep fried Zucchini coated with mildly spiced Chickpea flour batter accompanied with a sweet-tangy tamarind sauce'
         },
         {
         id: 2,
         name:'Vadonut',
-        image: 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxESEhURExIVFhUXFxgVGRUXFxUYFRYaFhcXFxcYFxsdHSggGBolHxUVIjEjJSkrLi4uGB8zODMsNygtLisBCgoKDg0OGxAQGTUmICYtNys2ListLys3Ky0tMC0tLS83Ny0tLS0rLS0tLS0tLS0vLS0tKy0tKy0vLS8tLS0tLf/AABEIAG4AbgMBIgACEQEDEQH/xAAcAAAABwEBAAAAAAAAAAAAAAAAAQMEBQYHAgj/xAA7EAABAwIDBQUGAwcFAAAAAAABAAIDBBEFITEGEkFhcRMiUYGRBzKhwdHwFFKxQnKCkrLh8RUjM2Jz/8QAGgEAAQUBAAAAAAAAAAAAAAAABQABAgMEBv/EACkRAAICAgAFAwMFAAAAAAAAAAABAgMEERIhIjGRBUFRMnGxE0JSYYH/2gAMAwEAAhEDEQA/ANsRI0EhBEqrV+1FyWwgEDLfOd+g+aW23xHs4eyae9Ll0aPe9dFTYX5ZDLTy5IL6rm2VLgren8hXAxIzXHND+XFZXEl0r/I2/RNZtoZmZNlfbrf9UxqmkXVOxbF3NBaChWLC62XFxvywnNVQXOK8F/g2sqL/APN8GlPqfaioOZeD/CPqsfocQdfU3V7whzi1pcM9eq15P61MNqx/6ymEKbP2LwXjC9rLu3JwGjhINP4hw6q0gg5jMeKyqojB+imdk8YfFKyneSYn91t/2DmRbkfBX+nepOeq7O/yY8zBSXHX4L4gjRI4CAIkaJIQugggnHM49pMxbUx/+XHT3s1CU1XoDr959FL+1CS8rRb3Gf1G/wAlR4q23Dz0QPLqjdOX3D2JPgrimW9rmuFjb/Kja3Z+mlN3saSo+DEnDKwPPp4J5HjHjYIU6L6m3W/BtbhLuHBg1PELRxNbYkjK+uuaeUo3RmVGT4s3NNY8ajAPL4hNOjIsW5cxJwjyRJ1NSN7IDzURXYo63c7pF7OGoIzBHmmFfiBkNxk3ml9nN01ERkALN9twfdOY15DXyRCjFjWk5dzPbfvkje6IkxsLtSxpPW2aVRoLoTmwkEEEhCqCCATjmde0J8TqhoF99rO/bSx93qdVnFdRm+9E4fuE8+CuGOyb1RUE3J7QjPgABZVOolDHG4GuR8f7oDOzd0muT/IerhqqKfwMJpgB3rtdnqLt638U3NWeBHlZPKypDmnTLS2d+qiJ9zgAr4ttc0Qb12Yt+KJ7pIK7imJyaD10Uf2zG6gLv/WGjRT4W+yIcfyyS/BOJu4+XBTGHwOfZkQLpHEMDctT9+gKq8WKl5tfU9VZsCe+KWJzb7xkjsR++AR5glQlDn1DqS10m90EJZExhNy1rWk+JAzS6K6F0WQGYEEESQwqhdEiumJGXbbYdJTzvlNzHK64PAEgXaeeSqdQ0PHetrktr2ip4308naNDg1pcLi9iBkRzXn91SzeLTdpHH9k/RC8nGXFtfcL4uRxQ0/Ya1OHZm1x8Eybg73mwJ9Sp6hjMjrXu0am6l2wCwAFgFRO51e5eqoz5lfi2YYPe7x5nJORgsAy7Jt/HJTEpACYS1Od1nhfZPuyz9OC9jqnoIm6MHwT3c3bOGRFiORGh5FR7KoXUjHICoSnKMtj6TWjStj9oo6iNsTnHtmt7wcblwGW+Dx+SsgKxOmux7ZWOLXNNwRqtG2W2nFT/ALb7NlFzYaOA4jwPJGMXMjZ0vuCcrEcOuPb8FmuguQUa3mAVuuSUZXBTEhrisHaxSRfnaW+oXnzFKSxLXCzwSDztl65L0Q4LJtvMHlbV9qI7xPLDvDQEa7w181mvjvma8Wem0yIwnDxEwNHVx4knh5J49wCTinzIPAkI3EEaLm75uU9sNxSS0RtdLqoaabiTZS1dCeCpm0Jc2QNOlt4Z5En6Inh1KSMuRY4onIKprrWcCpakkNxcqo7PtcXFxF22t4XJ0AVqpWnJLLrjHkKibktsmmOy0RU9aYZWyt1ab9fEel1xE7gkKkcUNqbU9o0SW1pm2UlQJGNe05OAcOhF0uCoDYm/4Gnvr2YU8F1UXtJnOTjwyaHJXDglCkyFIYTKZVtI2QbrhlZPyk3hMOYvXwGKaRhFiHG/ytytZcB/2FafaBhO64VQJs4hrhwB4HodPRVDtOK5rKpcLGg/TYpwTDljBUdU0QJz4cLXUpcIi0a2Uar3AnKKl3IuOjDeCdQt8E5cwJLj0Tzuc1zEopdjqx8URY57mxsBLnENA8Scvr6Ll7vvnwWhbJYAIR2sgHakZeDAeA/7HirMXHds/wCirIvVUd+5ZMOphFFHENGNDfQZp6CkWBLtauiS0AW98x4uSF0gpCEXNSbgnNlwWphEdWU7Xtcx7Q5rsiDoQs9xnYwsLnQvG5+R1y4cg7w6hag6IJlV0gcCqrKYzXUi2u6Vf0sxCYujduPBBGoPwN9ClmSLQca2YbKC0kZ6G2bT4qtjYie9hMz+VyF3entvoCNeZDXV3IF8i5j3nODWan7urfR+zsmxlqLji1jbX8zmrXhezFPCO60dTmpVem/zZGzOivpRStmdlZBKJZt1zW5sAuQXfmPRaJTwHincdO0ZWSwaiddUa1qIOstlY9yEmRpUNXQCNWlZ/9k=',
+        image: 'data:image/jpeg;base64,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',
         category: 'appetizer',
         label:'New',
         price:'1.99',
-        description:'A quintessential ConFusion experience, is it a vada or is it a donut?',
-        comments: [
-            {
-            id: 0,
-            rating: 5,
-            comment: "Imagine all the eatables, living in conFusion!",
-            author: "John Lemon",
-            date: "2012-10-16T17:57:28.556094Z"
-            },
-            {
-            id: 1,
-            rating: 4,
-            comment: "Sends anyone to heaven, I wish I could get my mother-in-law to eat it!",
-            author: "Paul McVites",
-            date: "2014-09-05T17:57:28.556094Z"
-            },
-            {
-            id: 2,
-            rating: 3,
-            comment: "Eat it, just eat it!",
-            author: "Michael Jaikishan",
-            date: "2015-02-13T17:57:28.556094Z"
-            },
-            {
-            id: 3,
-            rating: 4,
-            comment: "Ultimate, Reaching for the stars!",
-            author: "Ringo Starry",
-            date: "2013-12-02T17:57:28.556094Z"
-            },
-            {
-            id: 4,
-            rating: 2,
-            comment: "It's your birthday, we're gonna party!",
-            author: "25 Cent",
-            date: "2011-12-02T17:57:28.556094Z"
-            }
-        ]
+        featured: false,
+        description:'A quintessential ConFusion experience, is it a vada or is it a donut?'
         },
         {
         id: 3,
         name:'ElaiCheese Cake',
-        image: 'https://qph.fs.quoracdn.net/main-qimg-598e86b33a36ede99b5a50bfcbaec200.webp',
+        image: 'https://cdn.sallysbakingaddiction.com/wp-content/uploads/2019/03/no-bake-cheesecake-4.jpg',
         category: 'dessert',
         label:'',
         price:'2.99',
-        description:'A delectable, semi-sweet New York Style Cheese Cake, with Graham cracker crust and spiced with Indian cardamoms',
-        comments: [
-            {
-            id: 0,
-            rating: 5,
-            comment: "Imagine all the eatables, living in conFusion!",
-            author: "John Lemon",
-            date: "2012-10-16T17:57:28.556094Z"
-            },
-            {
-            id: 1,
-            rating: 4,
-            comment: "Sends anyone to heaven, I wish I could get my mother-in-law to eat it!",
-            author: "Paul McVites",
-            date: "2014-09-05T17:57:28.556094Z"
-            },
-            {
-            id: 2,
-            rating: 3,
-            comment: "Eat it, just eat it!",
-            author: "Michael Jaikishan",
-            date: "2015-02-13T17:57:28.556094Z"
-            },
-            {
-            id: 3,
-            rating: 4,
-            comment: "Ultimate, Reaching for the stars!",
-            author: "Ringo Starry",
-            date: "2013-12-02T17:57:28.556094Z"
-            },
-            {
-            id: 4,
-            rating: 2,
-            comment: "It's your birthday, we're gonna party!",
-            author: "25 Cent",
-            date: "2011-12-02T17:57:28.556094Z"
-            }
-        ]
+        featured: false,
+        description:'A delectable, semi-sweet New York Style Cheese Cake, with Graham cracker crust and spiced with Indian cardamoms'
         }
     ];
