@@ -1,5 +1,5 @@
 import React from 'react';
-
+import {Link} from 'react-router-dom'
 function Footer(props) {
     return(
     <div className="footer">
@@ -8,10 +8,10 @@ function Footer(props) {
                 <div className="col-4 offset-1 col-sm-2">
                     <h5>Links</h5>
                     <ul className="list-unstyled">
-                        <li><a href="#" style={{color:"black"}}>Home</a></li>
-                        <li><a href="#" style={{color:"black"}}>About</a></li>
-                        <li><a href="#" style={{color:"black"}}>Menu</a></li>
-                        <li><a href="contactus.html" style={{color:"black"}}>Contact</a></li>
+                        <li><Link to="/home" style={{color:"black"}}>Home</Link></li>
+                        <li><Link to="/aboutus" style={{color:"black"}}>About</Link></li>
+                        <li><Link to="/menu"style={{color:"black"}}>Menu</Link></li>
+                        <li><Link to="/contactus" style={{color:"black"}}>Contact</Link></li>
                     </ul>
                 </div>
                 <div className="col-7 col-sm-5">
@@ -23,7 +23,7 @@ function Footer(props) {
 		              <i className="fa fa-phone fa-lg"></i>: +852 1234 5678<br />
 		              <i className="fa fa-fax fa-lg"></i>: +852 8765 4321<br />
 		              <i className="fa fa-envelope fa-lg"></i>: <a href="mailto:confusion@food.net" style={{color:"black"}}>
-                         confusion@food.net</a>
+                         foodies@food.net</a>
                     </address>
                 </div>
                 <div className="col-12 col-sm-4 align-self-center">
